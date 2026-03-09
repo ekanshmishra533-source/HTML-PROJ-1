@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading-id">HOLI</h1>
+    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sed temporibus magnam exercitationem ex animi in atque, nam sunt, ipsa numquam? Voluptates eum nesciunt nam, ex perspiciatis odit fugiat! Incidunt.</p1>
+    <br><button id="button-id">
+        click
+    </button></br>
+</body>
+<script>
+    const heading = document.getElementById('heading-id');
+    console.log(heading.innerText);
+    heading.innerText = "COLOR";
+    heading.style.color= "violet";
+    const button = document.getElementById('button-id');
+    button.addEventListener("click", function(){
+        button.disabled = true;
+        button.innerText = "please wait.."
+    })
+   
+</script>
+</html>
